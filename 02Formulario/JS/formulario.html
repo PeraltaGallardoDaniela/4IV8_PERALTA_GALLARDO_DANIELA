@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Validación</title>
+    <script src="./validarformulario.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registro de usuario</h1>
+
+        <div class="intro-text">
+            Los formularios web se comunican con los servidores usando métodos HTTP.
+            <div class="method-tags">
+                <span class="tag tag-get">GET — obtiene datos vía URL</span>
+                <span class="tag tag-post">POST — envía datos de forma oculta</span>
+            </div>
+        </div>
+
+        <div id="mensaje-validacion" style="display: none;"></div>
+
+        <form name="formulario" method="POST" id="formulario" onsubmit="return validar(this)">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Por favor escribe aquí tu nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad" placeholder="Por favor escribe aquí tu edad">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Por favor escribe aquí tu correo electrónico">
+            </div>
+
+            <input type="submit" class="btn-primary" value="Enviar registro">
+            <input type="reset" class="btn-reset" value="Borrar datos" onclick="document.getElementById('mensaje-validacion').style.display='none'">
+        </form>
+    </div>
+</body>
+</html>

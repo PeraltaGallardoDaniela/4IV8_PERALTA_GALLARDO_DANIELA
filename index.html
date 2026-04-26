@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Validado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./JS/validacion.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Registro</h2>
+
+        <form name="formulario" method="POST" onsubmit="return validar(this)">
+
+            <label>Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+
+            <label>Edad:</label>
+            <input type="number" name="edad" id="edad" placeholder="Escribe tu edad">
+
+            <label>Email:</label>
+            <input type="email" name="email" id="email" placeholder="Escribe tu correo">
+
+            <label>Mensaje:</label>
+            <textarea name="mensaje" placeholder="Escribe un mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

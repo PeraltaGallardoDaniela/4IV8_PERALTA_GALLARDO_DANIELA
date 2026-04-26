@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de evidencias</title>
-    <link rel="stylesheet" href="index.html">
+    <title>Calcular Edad</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Este es el portafolio de evidencias de Peralta Gallardo Daniela</p>
 
-    <p>Aqui va la lista</p>
-    <li>
-        <ol><a href="./01PrimeraPractica/inicio.html">vamos para el inicio</a></ol>
-    </li>
+<div class="container">
+    <h1>Calculadora de Edad</h1>
+
+    <form id="formulario">
+        <label>Año de nacimiento:</label>
+        <input type="text" id="anio" placeholder="Ej: 2005">
+
+        <span id="error" class="error"></span>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+</div>
+
+<script src="validacion.js"></script>
 </body>
-
 </html>

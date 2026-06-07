@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comisiones del Vendedor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Comisiones del Vendedor</h1>
+
+    <form id="formulario">
+        <label>Sueldo base ($):</label>
+        <input type="text" id="sueldo" placeholder="Ej: 5000">
+
+        <label>Venta 1 ($):</label>
+        <input type="text" id="venta1">
+
+        <label>Venta 2 ($):</label>
+        <input type="text" id="venta2">
+
+        <label>Venta 3 ($):</label>
+        <input type="text" id="venta3">
+
+        <span id="error" class="error"></span>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+</div>
+
+<script src="validacion.js"></script>
+</body>
+</html>
